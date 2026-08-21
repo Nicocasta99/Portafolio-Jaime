@@ -4,6 +4,7 @@ import ImpactMetrics from "@/components/ImpactMetrics";
 import SectionIntro from "@/components/SectionIntro";
 import Reveal from "@/components/Reveal";
 import CTASection from "@/components/CTASection";
+import JournalGrid from "@/components/JournalGrid";
 
 const PILLARS = [
   {
@@ -85,6 +86,31 @@ export default function HomePage() {
             </Link>
           </Reveal>
         </div>
+      </section>
+
+      <div className="shell">
+        <div className="hairline" />
+      </div>
+
+      {/* ── 03 — Journal ─────────────────────────────────── */}
+      <section className="shell py-24">
+        <div className="mb-12 flex flex-wrap items-end justify-between gap-4">
+          <SectionIntro
+            eyebrow="// 03 — Journal"
+            title="Fuera de la oficina."
+            description="Familia, viajes y música. El lado personal detrás de la planeación y los proyectos."
+          />
+          <Reveal>
+            <Link
+              href="/journal"
+              className="rounded-full border border-hairline px-5 py-2.5 text-sm text-ink transition-colors hover:border-petrol hover:bg-petrol/5"
+            >
+              Ver Journal completo
+            </Link>
+          </Reveal>
+        </div>
+
+        <JournalGrid />
       </section>
 
       {/* ── CTA final ────────────────────────────────────── */}
